@@ -12,9 +12,9 @@
     </head>
     <body>
 
-        <div id="clock" class="clock module"></div>
+        <section id="clock" class="clock module"></section>
 
-        <div id="weather" class="weather module">
+        <section id="weather" class="weather module">
             <div class="search">
                 <form id="weather-search">
                     <input name="location" type="search" placeholder="Enter Location (City, State, Country or Zip)">
@@ -30,8 +30,79 @@
                 
                 <span class="slide-button" data-unit="f"></span>
             </div>
-            <div id="forecast"></div>
-        </div>
+            <div class="forecast-container">
+                <h2>Weather for Killeen, TX</h2>
+                <div class="condition current">
+                    <h3>Today</h3>
+                    <div class="icon">
+                        <img alt="warm" src="http://l.yimg.com/a/i/us/nws/weather/gr/33d.png"/>
+                    </div>
+                    <div class="temperature">
+                        <div class="current">Current: 55&deg; F</div>
+                        <span class="hi">High: 69&deg; F</span>
+                        <span class="lo">Low: 42&deg; F</span>
+                     </div>
+                </div>
+                <ul class="forecast">
+                    <li class="condition">
+                        <h3>Monday</h3>
+                        <div class="icon">
+                            <img alt="warm" src="http://l.yimg.com/a/i/us/nws/weather/gr/33d.png"/>
+                        </div>
+                        <div class="temperature">
+                            <div class="current">Current: 55&deg; F</div>
+                            <span class="hi">High: 69&deg; F</span>
+                            <span class="lo">Low: 42&deg; F</span>
+                        </div>
+                    </li>
+                    <li class="condition">
+                        <h3>Tuesday</h3>
+                        <div class="icon">
+                            <img alt="warm" src="http://l.yimg.com/a/i/us/nws/weather/gr/33d.png"/>
+                        </div>
+                        <div class="temperature">
+                            <div class="current">Current: 55&deg; F</div>
+                            <span class="hi">High: 69&deg; F</span>
+                            <span class="lo">Low: 42&deg; F</span>
+                        </div>
+                    </li>
+                    <li class="condition">
+                        <h3>Wednesday</h3>
+                        <div class="icon">
+                            <img alt="warm" src="http://l.yimg.com/a/i/us/nws/weather/gr/33d.png"/>
+                        </div>
+                        <div class="temperature">
+                            <div class="current">Current: 55&deg; F</div>
+                            <span class="hi">High: 69&deg; F</span>
+                            <span class="lo">Low: 42&deg; F</span>
+                        </div>
+                    </li>
+                    <li class="condition">
+                        <h3>Thursday</h3>
+                        <div class="icon">
+                            <img alt="warm" src="http://l.yimg.com/a/i/us/nws/weather/gr/33d.png"/>
+                        </div>
+                        <div class="temperature">
+                            <div class="current">Current: 55&deg; F</div>
+                            <span class="hi">High: 69&deg; F</span>
+                            <span class="lo">Low: 42&deg; F</span>
+                        </div>
+                    </li>
+                    <li class="condition">
+                        <h3>Friday</h3>
+                        <div class="icon">
+                            <img alt="warm" src="http://l.yimg.com/a/i/us/nws/weather/gr/33d.png"/>
+                        </div>
+                        <div class="temperature">
+                            <div class="current">Current: 55&deg; F</div>
+                            <span class="hi">High: 69&deg; F</span>
+                            <span class="lo">Low: 42&deg; F</span>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script src="js/lib/jquery.simpleWeather-2.3.js"></script>

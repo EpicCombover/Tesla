@@ -106,3 +106,36 @@
 .weather.loaded .switch {
   display: block;
 }
+
+.forecast-container {
+  width: 95%;
+  margin: 0 auto;
+}
+.forecast-container h2, .forecast-container h3 {
+  text-align: center;
+}
+
+.condition .icon, .condition .temperature {
+  box-sizing: border-box;
+  width: 50%;
+  float:left;
+}
+.condition:not(.current) {
+  box-sizing: border-box;
+  width: 20%;
+  border: 1px solid #000;
+  float: left;
+}
+.condition.current {
+  box-sizing: border-box;
+  width: 50%;
+  border: 1px solid #000;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.forecast {
+  box-sizing: border-box;
+  width: 100%;
+  clear: both;
+}
