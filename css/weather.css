@@ -1,0 +1,108 @@
+/*
+ * CSS Toggle
+*/
+.switch .slide-button {
+  display: none;
+}
+
+/* Radio switch */
+  .switch {
+    display: block;
+    width: 200px;
+    height: 40px;
+    /* Outline the toggles when the inputs are focused
+     */
+    /* Bugfix for older Webkit, including mobile Webkit. Adapted from:
+     * http://css-tricks.com/webkit-sibling-bug/
+     */
+    -webkit-animation: bugfix infinite 1s;
+    position: relative;
+    padding: 0;
+    /* Generate styles for the multiple states */
+  }
+  .switch * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .switch .slide-button {
+    display: block;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-in;
+  }
+  .switch label,
+  .switch > span {
+    line-height: 40px;
+    vertical-align: middle;
+  }
+  .switch input {
+    position: absolute;
+    opacity: 0;
+  }
+  .switch label {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .switch .slide-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+  }
+  .switch input:last-of-type:checked ~ .slide-button {
+    left: 50%;
+  }
+
+
+/* Gray Theme */
+  .gray {
+    background-color: #FFF;
+    border-radius: 3px;
+    color: #000;
+    text-align: center;
+    /*text-shadow: 1px 1px 1px #000;*/
+    -webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.5), 0 1px 0px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.5), 0 1px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.5), 0 1px 0px rgba(255, 255, 255, 0.2);
+  }
+  .gray input:checked + label {
+    color: #333;
+    /*text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);*/
+  }
+  .gray .slide-button {
+    border: 1px solid #333;
+    background-color: #999;
+    border-radius: 3px;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.45);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.45);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.45);
+  }
+  .gray > span {
+    color: #333;
+    text-shadow: none;
+  }
+  .gray span {
+    color: #fff;
+  }
+
+.weather .switch {
+  display: none;
+}
+
+.weather.loaded .switch {
+  display: block;
+}

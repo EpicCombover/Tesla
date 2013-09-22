@@ -1,0 +1,26 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+img {
+    vertical-align: middle;
+}
+
+h2, h3 {
+    clear: both;
+}

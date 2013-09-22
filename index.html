@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Tesla Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/clock.css">
+        <link rel="stylesheet" href="css/weather.css">
+    </head>
+    <body>
+
+        <div id="clock" class="clock module"></div>
+
+        <div id="weather" class="weather module">
+            <div class="search">
+                <form id="weather-search">
+                    <input name="location" type="search" placeholder="Enter Location (City, State, Country or Zip)">
+                    <button>Search</button>
+                </form>
+            </div>
+            <div class="switch gray">
+                <label for="fahrenheit">F&deg;</label>
+                <input id="fahrenheit" name="unit" type="radio" value="f" checked>
+                
+                <label for="celcius">C&deg;</label>
+                <input id="celcius" name="unit" type="radio" value="c">
+                
+                <span class="slide-button" data-unit="f"></span>
+            </div>
+            <div id="forecast"></div>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="js/lib/jquery.simpleWeather-2.3.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
